@@ -1,11 +1,14 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
     "target": {
       "namespace": "android_app",
-      "package_name": "id.rumbia.tosca",
+      "package_name": "com.rumbia.pos",
       "sha256_cert_fingerprints": [
-        "4A:18:35:2E:E9:C0:14:A1:E3:3C:30:44:46:DC:D4:91:47:EC:9A:32:F8:B1:86:F4:CE:E4:88:E9:92:DD:58:6A"
+        "7D:46:64:A6:BE:39:FC:DE:75:26:2E:76:77:BD:AD:29:51:7E:F8:BB:09:14:D4:C2:1A:F5:B2:91:95:D8:14:B5"
       ]
     }
   }
