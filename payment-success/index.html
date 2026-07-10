@@ -81,38 +81,10 @@
     <div class="container">
         <h2>Pembayaran Sukses!</h2>
 
-        <a href="intent://deeplink.rumbia.id/#Intent;scheme=https;package=com.rumbia.pos;end;"
-            class="btn" id="manual-btn">
+        <a href="https://deeplink.rumbia.id/" class="btn" id="manual-btn">
             Buka Aplikasi
         </a>
     </div>
-
-    <script>
-        function redirectToApp() {
-            const intentUrl = "intent://deeplink.rumbia.id/#Intent;scheme=https;package=com.rumbia.pos;end;";
-            const appSchemeUrl = "rumbia://payment-success";
-            const playStoreUrl = "https://play.google.com/store/apps/details?id=com.rumbia.pos";
-
-            const isAndroid = /Android/i.test(navigator.userAgent);
-
-            // if (isAndroid) {
-            //     window.location.href = intentUrl;
-            // } else {
-            //     const start = Date.now();
-            //     window.location.href = appSchemeUrl;
-
-            //     setTimeout(function () {
-            //         if (Date.now() - start < 2500) {
-            //             window.location.href = playStoreUrl;
-            //         }
-            //     }, 2000);
-            // }
-        }
-
-        // window.onload = function () {
-        //     setTimeout(redirectToApp, 500);
-        // };
-    </script>
 
 </body>
 
