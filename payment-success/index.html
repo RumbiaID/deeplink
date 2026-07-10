@@ -95,23 +95,23 @@
 
             const isAndroid = /Android/i.test(navigator.userAgent);
 
-            if (isAndroid) {
-                window.location.href = intentUrl;
-            } else {
-                const start = Date.now();
-                window.location.href = appSchemeUrl;
+            // if (isAndroid) {
+            //     window.location.href = intentUrl;
+            // } else {
+            //     const start = Date.now();
+            //     window.location.href = appSchemeUrl;
 
-                setTimeout(function () {
-                    if (Date.now() - start < 2500) {
-                        window.location.href = playStoreUrl;
-                    }
-                }, 2000);
-            }
+            //     setTimeout(function () {
+            //         if (Date.now() - start < 2500) {
+            //             window.location.href = playStoreUrl;
+            //         }
+            //     }, 2000);
+            // }
         }
 
-        window.onload = function () {
-            setTimeout(redirectToApp, 500);
-        };
+        // window.onload = function () {
+        //     setTimeout(redirectToApp, 500);
+        // };
     </script>
 
 </body>
