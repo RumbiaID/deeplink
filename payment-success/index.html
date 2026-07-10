@@ -80,18 +80,16 @@
 
     <div class="container">
         <h2>Pembayaran Sukses!</h2>
-        <div class="loader"></div>
-        <p>Sedang mengalihkan Anda kembali ke aplikasi Rumbia POS...</p>
 
-        <a href="intent://deeplink.rumbia.id/payment-success#Intent;scheme=https;package=com.rumbia.pos;end;"
+        <a href="intent://deeplink.rumbia.id/#Intent;scheme=https;package=com.rumbia.pos;end;"
             class="btn" id="manual-btn">
-            Buka Aplikasi Manual
+            Buka Aplikasi
         </a>
     </div>
 
     <script>
         function redirectToApp() {
-            const intentUrl = "intent://payment-success#Intent;scheme=rumbia;package=com.rumbia.pos;end;";
+            const intentUrl = "intent://deeplink.rumbia.id/#Intent;scheme=https;package=com.rumbia.pos;end;";
             const appSchemeUrl = "rumbia://payment-success";
             const playStoreUrl = "https://play.google.com/store/apps/details?id=com.rumbia.pos";
 
